@@ -1,0 +1,218 @@
+\documentclass{article}
+
+\usepackage{listings}
+
+\lstset{
+ frame=bt,
+ %frameround=tttt,
+%mathescape=true,
+  %language=Java,
+  breaklines=true,
+  showstringspaces=false,
+  columns=flexible,
+  numbers=none,
+  %commentstyle=\color{MidnightBlue},
+ %stringstyle=\color{gray},
+  %stringstyle=\color{purple},
+  basicstyle=\footnotesize\ttfamily,
+  %literate=*{\$}{{\textcolor{arsenic}{\$}}}{1},
+  tabsize=4
+}
+
+\title{\textbf{Progetto di Ricerca Operativa} \\
+	\large \textbf{Map Coloring (con variante) in AMPL} \\
+}
+
+\author{Vetere Francesco\\ Matricola: 313336 \\ \texttt{(francesco.vetere@studenti.unipr.it)}}
+\date{}
+
+\renewcommand*\contentsname{Indice}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\pagebreak
+
+\section{Descrizione del problema} 
+
+Il problema affrontato in questo progetto consiste nell'implementazione in linguaggio \texttt{AMPL} del problema del \texttt{Map Coloring}, e di una sua interessante variante.\\
+Risolvere il problema del \texttt{Map Coloring} significa assegnare ad ogni regione di una mappa geografica un colore, in modo tale che due regioni confinanti abbiano sempre colori diversi. Il numero di colori cercato \'e ovviamente quello minimo (utilizzando sempre un numero di colori pari al numero di regioni infatti, il problema diventerebbe banale).\\
+Il problema pu\'o essere rappresentato tramite un grafo $G = (V, E)$ in cui:
+\begin{itemize}
+\item $V=\{v_{1},...,v_{n}\}$ rappresenta l'insieme delle \emph{n} regioni della mappa geografica
+\item $E=\{(v_{i}, v_{j})\}$ rappresenta l'insieme delle coppie di regioni \emph{i} e \emph{j} che sono confinanti sulla mappa geografica\\
+\end{itemize}
+
+Una variante del problema appena descritto consiste nel cercare di eliminare un numero di regioni minimo in modo tale che la mappa risulti colorabile con un certo numero $k$ di colori. Anche in questa variante \'e subito evidente come prendendo $k = |V|$ il problema diventi banale.\\
+
+Nel seguito di questo elaborato, si indicheranno con \texttt{map\_coloring} e \texttt{map\_coloring\_2} rispettivamente il primo problema ed il secondo.
+\pagebreak
+
+\section{Modello matematico}
+Vengono di seguito mostrati i modelli matematici\\
+
+\subsection{map\_coloring}
+\texttt{map\_coloring}
+\pagebreak
+
+\subsection{map\_coloring\_2}
+\texttt{map\_coloring\_2}
+\pagebreak
+
+\section{Modello AMPL}
+Vengono di seguito mostrati i file \texttt{.mod}
+
+\subsection{map\_coloring.mod}
+\texttt{map\_coloring.mod}
+\lstinputlisting{map_coloring.mod}\\
+
+Il file modella in linguaggio \texttt{AMPL} quanto visto nell'analogo modello matematico.\\
+Per prima cosa vengono dichiarati gli insiemi che caratterizzano il problema: \texttt{NODES} e \texttt{EDGES} descrivono il grafo (\texttt{EDGES} \'e contenuto nel prodotto cartesiano \texttt{NODES} x \texttt{NODES}), mentre \texttt{COLORS} \'e l'insieme contenente i colori assegnabili.\\
+
+Seguono poi le dichiarazioni di due variabili: \texttt{node\_color} e \texttt{color\_used}.\\
+La prima modella un array bidimensionale avente indici sull'inieme dei nodi e dei colori, in cui ogni valore, vincolato ad essere di tipo binario, indica se un particolare nodo \'e assegnato ad un particolare colore o meno.\\
+La seconda modella un array monodimensionale avente indici sull'insieme dei colori, con valori ancora binari che indicano se un particolare colore \'e stato scelto per l'assegnamento o meno.\\ 
+
+Vengono dichiarati poi i due vincoli che caratterizzano il problema: \texttt{one\_color\_per\_node} e \texttt{different\_color\_adjacent}.\\
+La prima dichiarazione genera tanti vincoli quanti sono gli elementi dell'insieme \texttt{NODES}. Ogni vincolo generato impone che, per quel particolare nodo, la somma dei colori assegnati sia esattamente pari a 1 (questo per evitare assegnamenti di 0 oppure 2 colori per un singolo nodo).\\
+La seconda dichiarazione genera un vincolo per ogni elemento dell'insieme formato dal prodotto cartesiano di \texttt{EDGES} e \texttt{COLORS}. Ogni vincolo generato impone che due nodi adiacenti non possano essere assegnati allo stesso colore (altrimenti si avrebbe una colorazione non valida).\\
+
+Viene infine esplicitato l'obiettivo \texttt{num\_colors}, che semplicemente minimizza la somma di tutti i colori utilizzati.\\
+\pagebreak
+
+\subsection{map\_coloring\_2.mod}
+\texttt{map\_coloring\_2.mod}
+\lstinputlisting{map_coloring_2.mod}
+
+Questa variante \'e molto simile al problema originario.\\
+Viene introdotta una nuova variabile, \texttt{node\_deleted}, che modella un array monodimensionale avente indici sull'insieme dei nodi, con valori binari che indicano se un nodo \e' stato eliminato o meno.\\
+
+Cambia anche il vincolo \texttt{one\_color\_per\_node}: per ogni nodo, \'e richiesto che la somma dei colori asegnati sia ora pari a \texttt{1 - node\_deleted[n]}, per tenere conto del fatto che ora un nodo potrebbe anche non avere alcun colore assegnato, dal momento che si \'e scelto di eliminarlo.\\
+
+Anche l'obiettivo \'e diverso: \texttt{min\_deleted} richiede infatti che sia minimizzata la somma dei nodi eliminati.\\
+\pagebreak
+
+\section{Esempi di esecuzione}
+In questo capitolo vengono analizzati alcuni esempi di file \texttt{.dat} per entrambi i problemi.\\
+Per testare l'esecuzione del modello corredato con i suoi dati, si utilizza per entrambi un file \texttt{.run}, molto simile per entrambi i problemi:
+
+\texttt{map\_coloring.run}
+\lstinputlisting{map_coloring.run}
+
+\texttt{map\_coloring\_2.run}
+\lstinputlisting{map_coloring_2.run}
+
+Come si nota, si \'e scelto di mostrare in output il contenuto delle variabili al termine della risoluzione da parte del solver, in modo da poter trarre qualche conclusione sui risultati ottenuti.\\
+
+\subsection{map\_coloring.dat}
+
+Per quanto riguarda \texttt{map\_coloring}, analizziamo intanto il caso di un grafo completo, come descritto dalla seguente immagine:\\
+
+$ --- Immagine grafo completo --- $\\
+
+Il file \texttt{.dat} che implementa questa situazione \'e il seguente:
+
+\texttt{map\_coloring.dat}
+\lstinputlisting{map_coloring.dat}
+
+Si noti che \'e fondamentale definire un numero di colori sufficientemente alto per poter ottenere una soluzione ammissibile del problema: un upper bound sicuramente valido \'e dato dal numero di nodi presenti nel grafo.\\
+
+Dopo aver lanciato \texttt{map\_coloring.run} si ottiene il seguente risultato:\\
+\begin{verbatim}
+Gurobi 8.1.0: optimal solution; objective 5
+6 simplex iterations
+node_color [*,*]
+: blue green orange red yellow    :=
+A   0     0     0     1    0
+B   0     0     0     0    1
+C   0     0     1     0    0
+D   0     1     0     0    0
+E   1     0     0     0    0
+F   0     0     0     1    0
+;
+
+color_used [*] :=
+  blue  1
+ green  1
+orange  1
+   red  1
+yellow  1
+;
+\end{verbatim}
+
+Notiamo che il solver trova una soluzione ottima eseguendo 6 iterazioni dell'algoritmo del simplesso.\\
+Il valore ottimo, ossia 5, era in questo caso facilmente prevedibile: trattandosi di un grafo completo, ogni nodo \'e adiacente ai restanti $|V| - 1$ nodi: questo implica il fatto che ad ogni nodo dovr\'a necessariamente essere assegnato un colore differente.\\
+Il contenuto delle variabili ci conferma quanto ipotizzato: la variabile \texttt{node\_color} mostra che ad ogni nodo \'e assegnato esattamente un colore (questo deve essere vero per qualsiasi tipo di grafo, in quanto \'e una diretta conseguenza del vincolo \texttt{one\_color\_per\_node}) mentre la variabile \texttt{color\_used} mostra che tutti i colori sono stati utilizzati.\\
+
+Una possibile soluzione ottima trovata dal solver \'e la seguente:\\
+
+$ --- Immagine grafo completo colorato --- $\\
+
+\subsection{map\_coloring\_2.dat}
+$ --- Caso del grafo completo --- $\\
+
+Analizziamo ora il caso di un grafo non completo, descritto dalla seguente immagine:\\
+
+$ --- Immagine grafo non completo --- $\\
+
+Il file \texttt{.dat} che implementa questa situazione \'e il seguente:
+
+\texttt{map\_coloring\_2.dat}
+\lstinputlisting{map_coloring_2.dat}
+
+Notiamo che sono stati fissati $k = 2$ colori, \texttt{red} e \texttt{blue}.\\
+Ovviamente il grafo descritto non \'e colorabile con $2$ soli colori, e vorremmo dunque che il solver ci fornisca un numero minimale di nodi da eliminare affinch\'e il grafo sia 2-colorabile.\\
+
+Dopo aver lanciato \texttt{map\_coloring\_2.run} si ottiene il seguente risultato:\\
+
+\begin{verbatim}
+Gurobi 8.1.0: optimal solution; objective 2
+13 simplex iterations
+1 branch-and-cut nodes
+node_color :=
+A blue   1
+A red    0
+B blue   0
+B red    0
+C blue   1
+C red    0
+D blue   0
+D red    0
+E blue   0
+E red    1
+F blue   1
+F red    0
+G blue   1
+G red    0
+;
+
+color_used [*] :=
+blue  1
+ red  1
+;
+
+node_deleted [*] :=
+A  0
+B  1
+C  0
+D  1
+E  0
+F  0
+G  0
+;
+
+\end{verbatim}
+
+Notiamo che il solver trova una soluzione ottima eseguendo 13 iterazioni dell'algoritmo del simplesso e 1 iterazione dell'algoritmo branch and bound.\\
+Il valore ottimo \'e in questo caso 2: affinch\'e il grafo sia 2-colorabile, e necessario eliminare 2 nodi. Come evidenziato dal contenuto delle variabili, una possibile soluzione ottima consiste nell'eliminare i nodi \texttt{B} e \texttt{D}: cos\'i facendo, il grafo risultante \'e il seguente:\\
+
+$ --- Grafo non completo dopo eliminazione di B e D --- $
+
+A questo punto \'e facile pensare ad una colorazione valida composta da 2 soli colori:
+
+$ --- Grafo Grafo non completo dopo eliminazione di B e D colorato --- $
+
+\pagebreak
+
+\end{document}

@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Descrizione del problema}{2}
+\contentsline {section}{\numberline {2}Modello matematico}{3}
+\contentsline {subsection}{\numberline {2.1}map\_coloring}{3}
+\contentsline {subsection}{\numberline {2.2}map\_coloring\_2}{4}
+\contentsline {section}{\numberline {3}Modello AMPL}{5}
+\contentsline {subsection}{\numberline {3.1}map\_coloring.mod}{5}
+\contentsline {subsection}{\numberline {3.2}map\_coloring\_2.mod}{7}
+\contentsline {section}{\numberline {4}Esempi di esecuzione}{8}
+\contentsline {subsection}{\numberline {4.1}map\_coloring.dat}{8}
+\contentsline {subsection}{\numberline {4.2}map\_coloring\_2.dat}{10}
