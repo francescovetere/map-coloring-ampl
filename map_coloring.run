@@ -1,7 +1,7 @@
 reset;
 option solver '../ampl/gurobi';
 model map_coloring.mod;
-data map_coloring.dat;
+data map_coloring_dat/map_coloring_es2.dat;
 solve;
 
 display node_color;

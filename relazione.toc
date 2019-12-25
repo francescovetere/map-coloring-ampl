@@ -6,5 +6,9 @@
 \contentsline {subsection}{\numberline {3.1}map\_coloring.mod}{5}
 \contentsline {subsection}{\numberline {3.2}map\_coloring\_2.mod}{7}
 \contentsline {section}{\numberline {4}Esempi di esecuzione}{8}
-\contentsline {subsection}{\numberline {4.1}map\_coloring.dat}{8}
-\contentsline {subsection}{\numberline {4.2}map\_coloring\_2.dat}{10}
+\contentsline {subsection}{\numberline {4.1}map\_coloring}{8}
+\contentsline {subsubsection}{\numberline {4.1.1}map\_coloring\_es1.dat}{8}
+\contentsline {subsubsection}{\numberline {4.1.2}map\_coloring\_es2.dat}{10}
+\contentsline {subsection}{\numberline {4.2}map\_coloring\_2}{11}
+\contentsline {subsubsection}{\numberline {4.2.1}map\_coloring\_2\_es1.dat}{11}
+\contentsline {subsubsection}{\numberline {4.2.2}map\_coloring\_2\_es2.dat}{11}
