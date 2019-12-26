@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.5)  25 DEC 2019 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.5)  26 DEC 2019 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -114,7 +114,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[3] [4] (./map_coloring.mod)
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+(./map_coloring.mod)
 
 ! LaTeX Error: There's no line here to end.
 
@@ -138,7 +143,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--76
 
  []
 
-
+[5]
 Overfull \hbox (47.97858pt too wide) in paragraph at lines 77--80
 []\OT1/cmr/m/n/10 Vengono dichiarati poi i due vin-coli che carat-ter-iz-zano i
 l prob-lema: \OT1/cmtt/m/n/10 one[]color[]per[]node
@@ -149,7 +154,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
-[5] [6] (./map_coloring_2.mod)
+[6] (./map_coloring_2.mod)
 ! Undefined control sequence.
 l.89 ...n valori binari che indicano se un nodo \e
                                                   ' stato eliminato o meno.\\
@@ -236,65 +241,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--195
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 198--201
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-
+(./map_coloring_2_dat/map_coloring_2_es1.dat)
 Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
-(./map_coloring_2_dat/map_coloring_2_es2.dat)
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
-[12] (./relazione.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+(./map_coloring_2_dat/map_coloring_2_es2.dat)
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 291--293
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+(./map_coloring_2_dat/map_coloring_2_es3.dat)
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+[14] [15] (./relazione.aux) ) 
 Here is how much of TeX's memory you used:
- 1503 strings out of 492982
- 21368 string characters out of 6134897
+ 1509 strings out of 492982
+ 21572 string characters out of 6134897
  178719 words of memory out of 5000000
  5094 multiletter control sequences out of 15000+600000
  9053 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  26i,6n,32p,416b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmtt8.pfb>
-Output written on relazione.pdf (12 pages, 151552 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt8.pfb>
+Output written on relazione.pdf (15 pages, 155429 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 101 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
