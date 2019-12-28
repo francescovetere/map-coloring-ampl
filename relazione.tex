@@ -38,7 +38,7 @@
 
 Il problema affrontato in questo progetto consiste nell'implementazione in linguaggio \texttt{AMPL} del problema del \texttt{Map Coloring}, e di una sua interessante variante.\\
 Risolvere il problema del \texttt{Map Coloring} significa assegnare ad ogni regione di una mappa geografica un colore, in modo tale che due regioni confinanti abbiano sempre colori diversi. Il numero di colori cercato \'e ovviamente quello minimo (utilizzando sempre un numero di colori pari al numero di regioni infatti, il problema diventerebbe banale).\\
-Il problema pu\'o essere rappresentato tramite un grafo $G = (V, E)$ in cui:
+La mappa geografica pu\'o essere rappresentata tramite un grafo $G = (V, E)$ in cui:
 \begin{itemize}
 \item $V=\{v_{1},...,v_{n}\}$ rappresenta l'insieme delle \emph{n} regioni della mappa geografica
 \item $E=\{(v_{i}, v_{j})\}$ rappresenta l'insieme delle coppie di regioni \emph{i} e \emph{j} che sono confinanti sulla mappa geografica\\
@@ -49,18 +49,86 @@ Una variante del problema appena descritto consiste nel cercare di eliminare un 
 Nel seguito di questo elaborato, si indicheranno con \texttt{map\_coloring} e \texttt{map\_coloring\_2} rispettivamente il primo problema ed il secondo.
 \pagebreak
 
-\section{Modello matematico}
+\section{Modelli matematici}
 Vengono di seguito mostrati i modelli matematici dei due problemi.\\
 
 \subsection{map\_coloring}
-\texttt{map\_coloring}
+Per quanto riguarda \texttt{map\_coloring}, le componenti del modello sono:\\
+
+\begin{itemize}
+\item[] \textsc{variabili}
+	\begin{itemize}
+	\item[$\bullet$] $node\_color_{n,c}$: ad ogni coppia nodo $n$ e colore $c$ associamo una variabile binaria $node\_color_{n,c}$ che avr\'a valore 1 se il nodo $n$ \'e assegnato il colore $c$, 0 altrimenti.\\
+	\item[$\bullet$] $color\_used_{c}$: ad ogni colore $c$ associamo una variabile binaria $color\_used_{c}$ che avr\'a valore 1 se il colore $c$ \'e stato utilizzato, 0 altrimenti.\\
+	\end{itemize}
+	
+\item[] \textsc{vincoli}
+	\begin{itemize}
+	\item[$\bullet$] Un primo vincolo consiste nel richiedere che ad ogni nodo sia assegnato un solo colore:\\
+	$vincolo$
+	
+	\item[$\bullet$] Il secondo vincolo impone che non vi siano due nodi adiacenti aventi lo stesso colore assegnato:\\
+	$vincolo$
+	
+	\item[$\bullet$] Gli ultimi due vincoli impongono le condizioni di interezza sulle due variabili:\\
+	$vincolo$\\
+	$vincolo$
+	\end{itemize}
+
+
+\item[] \textsc{obiettivo} 
+	\begin{itemize}
+	\item[$\bullet$] L'obiettivo consiste nel minimizzare il numero di colori utilizzati:\\
+	$obiettivo$
+	\end{itemize}
+\end{itemize}
+
+Il modello matematico completo risulta essere quindi il seguente:\\
+$modello$\\
+
+Notiamo che il problema di Programmazione Matematica qui descritto si configura come problema di Programmazione Binaria Intera (PBI), a sua volta sottoclasse dei problemi di Programmazione Lineare Intera (PLI): da questo fatto si deduce come \texttt{map\_coloring} sia un problema \emph{NP-completo}.\\
+
 \pagebreak
 
 \subsection{map\_coloring\_2}
-\texttt{map\_coloring\_2}
+Per quanto riguarda \texttt{map\_coloring\_2}, le componenti del modello sono quasi identiche a quelle viste per \texttt{map\_coloring}, con pochi accorgimenti in pi\'u:\\
+
+\begin{itemize}
+\item[] \textsc{variabili}
+	\begin{itemize}
+	\item[$\bullet$] $node\_color_{n,c}$: ad ogni coppia nodo $n$ e colore $c$ associamo una variabile binaria $node\_color_{n,c}$ che avr\'a valore 1 se il nodo $n$ \'e assegnato il colore $c$, 0 altrimenti.\\
+	\item[$\bullet$] $color\_used_{c}$: ad ogni colore $c$ associamo una variabile binaria $color\_used_{c}$ che avr\'a valore 1 se il colore $c$ \'e stato utilizzato, 0 altrimenti.\\
+	\item[$\bullet$] $node\_deleted_{n}$: ad ogni nodo $n$ associamo una variabile binaria $node\_deleted_{n}$ che avr\'a valore 1 se il colore $n$ \'e stato eliminato (non colorato), 0 altrimenti.\\
+	\end{itemize}
+	
+\item[] \textsc{vincoli}
+	\begin{itemize}
+	\item[$\bullet$] Un primo vincolo consiste nel richiedere che ad ogni nodo sia assegnato un solo colore, tenendo per\'o in considerazione anche il fatto che alcuni nodi potrebbero essere stati eliminati e dunque non avere alcun colore assegnato:\\
+	$vincolo$\\
+	
+	Notiamo infatti che se il nodo non \'e stato eliminato, il vincolo coincide esattamente con l'analogo vincolo visto in \texttt{map\_coloring}. In caso contrario, il vincolo impone che per tale nodo non vi sia alcun colore assegnato.\\
+	
+	\item[$\bullet$] Il secondo vincolo impone che non vi siano due nodi adiacenti aventi lo stesso colore assegnato:\\
+	$vincolo$
+	
+	\item[$\bullet$] Gli ultimi due vincoli impongono le condizioni di interezza sulle due variabili:\\
+	$vincolo$\\
+	$vincolo$
+	\end{itemize}
+
+
+\item[] \textsc{obiettivo} 
+	\begin{itemize}
+	\item[$\bullet$] L'obiettivo consiste nel minimizzare il numero di nodi eliminati:\\
+	$obiettivo$
+	\end{itemize}
+\end{itemize}
+
+Il modello matematico completo risulta essere quindi il seguente:\\
+$modello$
 \pagebreak
 
-\section{Modello AMPL}
+\section{Modelli AMPL}
 Vengono di seguito mostrati i file \texttt{.mod} dei due problemi.\\
 
 \subsection{map\_coloring.mod}
@@ -86,7 +154,7 @@ Viene infine esplicitato l'obiettivo \texttt{num\_colors}, che semplicemente min
 \lstinputlisting{map_coloring_2.mod}
 
 Questa variante \'e molto simile al problema originario.\\
-Viene introdotta una nuova variabile, \texttt{node\_deleted}, che modella un array monodimensionale avente indici sull'insieme dei nodi, con valori binari che indicano se un nodo \e' stato eliminato o meno.\\
+Viene introdotta una nuova variabile, \texttt{node\_deleted}, che modella un array monodimensionale avente indici sull'insieme dei nodi, con valori binari che indicano se un nodo sia stato eliminato o meno.\\
 
 Cambia anche il vincolo \texttt{one\_color\_per\_node}: per ogni nodo, \'e richiesto che la somma dei colori asegnati sia ora pari a \texttt{1 - node\_deleted[n]}, per tenere conto del fatto che ora un nodo potrebbe anche non avere alcun colore assegnato, dal momento che si \'e scelto di eliminarlo.\\
 
