@@ -1,6 +1,6 @@
 set COLORS := red blue green yellow orange;
 
-set NODES := A B C D E F;
+set NODES := A B C D E;
 
 set EDGES := (A, B) (A, C) (A, D) (A, E)
 	     (B, A) (B, C) (B, D) (B, E)
