@@ -3,6 +3,8 @@
 \usepackage{listings}
 \usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage{graphicx}
+
 \hypersetup{
     colorlinks=false, %set true if you want colored links
     linktoc=all,     %set to all if you want both sections and subsections linked
@@ -272,10 +274,12 @@ Come si nota, si \'e scelto di mostrare in output il contenuto delle variabili a
 \subsubsection{map\_coloring\_es1.dat}
 
 Per quanto riguarda \texttt{map\_coloring}, analizziamo intanto il caso di un grafo completo con $|V| = 5$, ossia un grafo in cui ogni vertice \'e collegato tramite un arco agli altri 4 vertici restanti. \\
-Sebbene questa situazione non rappresenti una mappa, in quanto vale un teorema che dice che non \'e possibile dividere un piano in 5 regioni in modo che ciascuna tocchi le altre 4 (il confine tra le regioni \'e da intendersi come un tratto di territorio, e non uno o pi\'u punti separati: in quel caso infatti, sarebbe sufficiente considerare una circonferenza e dividerla in spicchi, ed allora tutti gli spicchi sarebbero confinanti tra di loro), \'e comunque un caso interessante da analizzare.\\
-La seguente immagine rappresenta la nostra situazione:\\
+Sebbene questa situazione non rappresenti una mappa, in quanto vale un teorema per cui non \'e possibile dividere un piano in 5 regioni in modo che ciascuna tocchi le altre 4 (il confine tra le regioni \'e da intendersi come un tratto di territorio, e non uno o pi\'u punti separati: in tal caso infatti, sarebbe sufficiente considerare una circonferenza e dividerla in spicchi, ed allora tutti gli spicchi sarebbero confinanti tra di loro), \'e comunque un caso interessante da analizzare.\\
+Sia dato quindi il seguente grafo:\\
 
-$ --- Immagine grafo completo --- $\\
+\begin{center}
+\includegraphics[scale=0.2]{complete_graph.png}
+\end{center}
 
 Il file \texttt{.dat} che implementa questa situazione \'e il seguente:
 
@@ -316,16 +320,18 @@ Il contenuto delle variabili ci conferma quanto ipotizzato: la variabile \texttt
 
 La soluzione ottima trovata dal solver \'e la seguente:\\
 
-$ --- Immagine grafo completo colorato --- $\\
-
-
-
+\begin{center}
+\includegraphics[scale=0.2]{complete_graph_coloured1.png}
+\end{center}
 
 
 \subsubsection{map\_coloring\_es2.dat}
 Analizziamo ora il caso di un grafo non completo, come illustrato dalla seguente immagine:\\
 
-$ --- Immagine grafo non completo --- $\\
+\begin{center}
+\includegraphics[scale=0.2]{non_complete_graph.png}
+\end{center}
+
 
 Fornendo sempre un numero di colori sufficientemente elevato, il file \texttt{.dat} che implementa questa situazione \'e il seguente:
 
@@ -363,11 +369,18 @@ Come evidente dal valore ottimo, il numero minimo di colori per ottenere una col
 Utilizzando infatti i colori \texttt{blue}, \texttt{green} e \texttt{yellow}, notiamo che il solver riesce correttamente ad assegnare ad ogni nodo uno ed un solo colore, come richiesto dal problema.\\
 La soluzione ottima trovata dal solver \'e rappresentata dalla seguente immagine:\\
 
-$ --- Immagine grafo non completo colorato--- $\\
+\begin{center}
+\includegraphics[scale=0.2]{non_complete_graph_coloured1.png}
+\end{center}
 
 \subsection{map\_coloring\_2}
 \subsubsection{map\_coloring\_2\_es1.dat}
-Per quanto riguarda \texttt{map\_coloring\_2}, analizziamo intanto il caso del grafo completo considerato in \texttt{map\_coloring}.\\
+Per quanto riguarda \texttt{map\_coloring\_2}, analizziamo intanto il caso del grafo completo considerato in \texttt{map\_coloring}:\\
+
+\begin{center}
+\includegraphics[scale=0.2]{complete_graph.png}
+\end{center}
+
 Lasciando invariato il numero di colori (ossia 5), si ha che banalmente il solver non elimina alcun nodo, poich\'e 5 \'e gi\'a il numero  minimo di colori per cui il grafo \'e colorabile.\\
 Il file \texttt{.dat} associato a questa situazione \'e lo stesso visto per \texttt{map\_coloring}:\\
 
@@ -411,12 +424,16 @@ F  0
 
 Notiamo che la soluzione ottima \'e tuttavia diversa da quella precedente: questo \'e ovvio, poich\'e ci sono pi\'u combinazioni che permettono di ottenere lo stesso risultato. La combinazione trovata dal solver \'e in questo caso la seguente:\\
 
-$ --- Immagine grafo completo 2 colorato --- $\\
+\begin{center}
+\includegraphics[scale=0.2]{complete_graph_coloured2.png}
+\end{center}
 
 \subsubsection{map\_coloring\_2\_es2.dat}
 Analizziamo ora il caso dello stesso grafo non completo visto in \texttt{map\_coloring}:\\
 
-$ --- Immagine grafo non completo --- $\\
+\begin{center}
+\includegraphics[scale=0.2]{non_complete_graph.png}
+\end{center}
 
 Dalla soluzione ottenuta precedentemente, sappiamo che il grafo richiede un minimo di 3 colori per poter essere colorato in maniera ammissibile. Proviamo dunque a fissare un numero di colori $k = 2$: il solver, se possibile, dovr\'a scegliere di eliminare alcuni nodi al fine ottenere una colorazione valida.\\
 
@@ -470,14 +487,18 @@ G  0
 Notiamo che il solver riesce ad eliminare un certo numero di nodi per ottenere una colorazione valida con 2 colori: una soluzione ottima \'e infatti trovata eseguendo 13 iterazioni dell'algoritmo del simplesso e 1 iterazione dell'algoritmo branch and bound.\\
 Il valore ottimo \'e in questo caso 2: affinch\'e il grafo sia 2-colorabile, \'e necessario eliminare 2 nodi. Come evidenziato dal valore delle variabili, una possibile soluzione ottima consiste nell'eliminare i nodi \texttt{B} e \texttt{D}: cos\'i facendo, il grafo risultante \'e effettivamente 2-colorabile, e la soluzione ottima trovata dal solver \'e la seguente:\\
 
-$ --- Grafo non completo dopo eliminazione di B e D colorato --- $
+\begin{center}
+\includegraphics[scale=0.2]{non_complete_graph_coloured2.png}
+\end{center}
 
 \pagebreak
 
 \subsubsection{map\_coloring\_2\_es3.dat}
 Analizziamo ora il caso di un albero binario:\\
 
-$ --- Immagine albero binario --- $\\
+\begin{center}
+\includegraphics[scale=0.2]{tree.png}
+\end{center}
 
 In generale, un albero binario necessita di almeno 2 colori per poter essere colorabile. Analizziamo allora il comportamento del solver nel caso venga reso disponibile 1 solo colore, implementando il seguente file \texttt{.dat}:\\
 
@@ -518,6 +539,8 @@ G  0
 Notiamo che il solver \'e costretto ad eliminare qualsiasi collegamento esistente tra i nodi: una soluzione ottima \'e quella di eliminare i nodi \texttt{A}, \texttt{C} e \texttt{D}.\\
 Cos\'i facendo, il grafo risultante essere 1-colorabile (il solver sceglie l'unico colore disponibile, \texttt{red}):
 
-$ --- Albero dopo eliminazione di A, C, D colorato --- $
+\begin{center}
+\includegraphics[scale=0.2]{tree_coloured.png}
+\end{center}
 
 \end{document}

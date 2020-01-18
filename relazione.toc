@@ -8,8 +8,8 @@
 \contentsline {section}{\numberline {4}Esempi di esecuzione}{10}{section.4}
 \contentsline {subsection}{\numberline {4.1}map\_coloring}{10}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}map\_coloring\_es1.dat}{10}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}map\_coloring\_es2.dat}{12}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}map\_coloring\_2}{13}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}map\_coloring\_2\_es1.dat}{13}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}map\_coloring\_2\_es2.dat}{15}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}map\_coloring\_2\_es3.dat}{17}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.1.2}map\_coloring\_es2.dat}{13}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}map\_coloring\_2}{15}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}map\_coloring\_2\_es1.dat}{15}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}map\_coloring\_2\_es2.dat}{18}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}map\_coloring\_2\_es3.dat}{21}{subsubsection.4.2.3}

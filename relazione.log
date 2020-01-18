@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.5)  17 JAN 2020 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.5)  18 JAN 2020 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -223,28 +223,48 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 10.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 12.
 
 (./relazione.aux)
 \openout1 = `relazione.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 \c@lstlisting=\count117
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 40.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -252,30 +272,61 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
 
 (./relazione.out) (./relazione.out)
 \@outlinefile=\write3
 \openout3 = `relazione.out'.
 
- (./relazione.toc)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count119
+\scratchdimen=\dimen122
+\scratchbox=\box31
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen123
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks22
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(./relazione.toc)
 \tf@toc=\write4
 \openout4 = `relazione.toc'.
 
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
 
-Overfull \hbox (2.19646pt too wide) in paragraph at lines 51--52
+Overfull \hbox (2.19646pt too wide) in paragraph at lines 53--54
 []$\OML/cmm/m/it/10 E \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML
 /cmm/m/it/10 v[]; v[]\OT1/cmr/m/n/10 ) : \OML/cmm/m/it/10 v[]; v[] \OMS/cmsy/m/
 n/10 2 \OML/cmm/m/it/10 V; v[] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = \OML/cmm/m/i
@@ -285,68 +336,68 @@ ti$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Overfull \hbox (31.97806pt too wide) in paragraph at lines 56--58
+Overfull \hbox (31.97806pt too wide) in paragraph at lines 58--60
 []\OT1/cmr/m/n/10 Nel se-guito di questo elab-o-rato, si in-dicher-anno con \OT
 1/cmtt/m/n/10 map[]coloring \OT1/cmr/m/n/10 e \OT1/cmtt/m/n/10 map[]coloring[]2
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 
-Overfull \hbox (12.51138pt too wide) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Overfull \hbox (12.51138pt too wide) in paragraph at lines 79--80
 []$\OML/cmm/m/it/10 color[]used[]$\OT1/cmr/m/n/10 : ad ogni col-ore $\OML/cmm/m
 /it/10 c$ \OT1/cmr/m/n/10 as-so-ci-amo una vari-abile bi-na-ria $\OML/cmm/m/it/
 10 color[]used[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.86 
+l.88 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -354,7 +405,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.86 
+l.88 
      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -365,7 +416,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.86 
+l.88 
      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -376,7 +427,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.86 
+l.88 
      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -387,14 +438,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.86 
+l.88 
      
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.86 
+l.88 
      
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -403,7 +454,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.86 
+l.88 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -411,7 +462,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \crcr.
 \endaligned ->\crcr 
                     \egroup \restorecolumn@ \egroup 
-l.87 	\end{aligned}
+l.89 	\end{aligned}
                    
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -422,7 +473,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \endaligned ->\crcr \egroup 
                             \restorecolumn@ \egroup 
-l.87 	\end{aligned}
+l.89 	\end{aligned}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -433,7 +484,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 \endaligned ...cr \egroup \restorecolumn@ \egroup 
                                                   
-l.87 	\end{aligned}
+l.89 	\end{aligned}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -442,14 +493,14 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.95 
+l.97 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -457,7 +508,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.95 
+l.97 
      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -468,7 +519,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.95 
+l.97 
      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -479,7 +530,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.95 
+l.97 
      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -490,14 +541,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 
+l.97 
      
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.95 
+l.97 
      
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -506,7 +557,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.95 
+l.97 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -514,7 +565,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \crcr.
 \endaligned ->\crcr 
                     \egroup \restorecolumn@ \egroup 
-l.96 	\end{aligned}
+l.98 	\end{aligned}
                    
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -525,7 +576,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \endaligned ->\crcr \egroup 
                             \restorecolumn@ \egroup 
-l.96 	\end{aligned}
+l.98 	\end{aligned}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -536,7 +587,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 \endaligned ...cr \egroup \restorecolumn@ \egroup 
                                                   
-l.96 	\end{aligned}
+l.98 	\end{aligned}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -545,12 +596,12 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Overfull \hbox (56.58546pt too wide) detected at line 97
+Overfull \hbox (56.58546pt too wide) detected at line 99
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
@@ -558,7 +609,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.105 
+l.107 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -566,7 +617,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.105 
+l.107 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -577,7 +628,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.105 
+l.107 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -588,7 +639,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.105 
+l.107 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -599,14 +650,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.105 
+l.107 
       
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.105 
+l.107 
       
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -615,7 +666,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.105 
+l.107 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -623,7 +674,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \crcr.
 \endaligned ->\crcr 
                     \egroup \restorecolumn@ \egroup 
-l.106 	\end{aligned}
+l.108 	\end{aligned}
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -634,7 +685,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \endaligned ->\crcr \egroup 
                             \restorecolumn@ \egroup 
-l.106 	\end{aligned}
+l.108 	\end{aligned}
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -645,7 +696,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 \endaligned ...cr \egroup \restorecolumn@ \egroup 
                                                   
-l.106 	\end{aligned}
+l.108 	\end{aligned}
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -654,14 +705,14 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.119 
+l.121 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -669,7 +720,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.119 
+l.121 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -680,7 +731,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.119 
+l.121 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -691,7 +742,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.119 
+l.121 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -702,14 +753,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.119 
+l.121 
       
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.119 
+l.121 
       
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -718,7 +769,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.119 
+l.121 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -726,7 +777,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \crcr.
 \endaligned ->\crcr 
                     \egroup \restorecolumn@ \egroup 
-l.120 	\end{aligned}
+l.122 	\end{aligned}
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -737,7 +788,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \endaligned ->\crcr \egroup 
                             \restorecolumn@ \egroup 
-l.120 	\end{aligned}
+l.122 	\end{aligned}
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -748,7 +799,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 \endaligned ...cr \egroup \restorecolumn@ \egroup 
                                                   
-l.120 	\end{aligned}
+l.122 	\end{aligned}
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -757,14 +808,14 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.136 
+l.138 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -772,7 +823,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.136 
+l.138 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -783,7 +834,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.136 
+l.138 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -794,14 +845,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.136 
+l.138 
       
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.136 
+l.138 
       
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -810,7 +861,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.136 
+l.138 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -818,7 +869,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \crcr.
 \endaligned ->\crcr 
                     \egroup \restorecolumn@ \egroup 
-l.137 \end{aligned}
+l.139 \end{aligned}
                    
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -829,7 +880,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \endaligned ...cr \egroup \restorecolumn@ \egroup 
                                                   
-l.137 \end{aligned}
+l.139 \end{aligned}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -838,42 +889,18 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Overfull \hbox (26.25215pt too wide) detected at line 138
+Overfull \hbox (26.25215pt too wide) detected at line 140
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-
- []
-
-
-Overfull \hbox (12.51138pt too wide) in paragraph at lines 151--152
-[]$\OML/cmm/m/it/10 color[]used[]$\OT1/cmr/m/n/10 : ad ogni col-ore $\OML/cmm/m
-/it/10 c$ \OT1/cmr/m/n/10 as-so-ci-amo una vari-abile bi-na-ria $\OML/cmm/m/it/
-10 color[]used[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-
- []
-
-
-Overfull \hbox (31.96243pt too wide) in paragraph at lines 152--153
-[]$\OML/cmm/m/it/10 node[]deleted[]$\OT1/cmr/m/n/10 : ad ogni nodo $\OML/cmm/m/
-it/10 n$ \OT1/cmr/m/n/10 as-so-ci-amo una vari-abile bi-na-ria $\OML/cmm/m/it/1
-0 node[]deleted[]$
  []
 
 
@@ -882,12 +909,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Overfull \hbox (12.51138pt too wide) in paragraph at lines 153--154
+[]$\OML/cmm/m/it/10 color[]used[]$\OT1/cmr/m/n/10 : ad ogni col-ore $\OML/cmm/m
+/it/10 c$ \OT1/cmr/m/n/10 as-so-ci-amo una vari-abile bi-na-ria $\OML/cmm/m/it/
+10 color[]used[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Overfull \hbox (31.96243pt too wide) in paragraph at lines 154--155
+[]$\OML/cmm/m/it/10 node[]deleted[]$\OT1/cmr/m/n/10 : ad ogni nodo $\OML/cmm/m/
+it/10 n$ \OT1/cmr/m/n/10 as-so-ci-amo una vari-abile bi-na-ria $\OML/cmm/m/it/1
+0 node[]deleted[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
@@ -896,10 +942,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.170 
+l.172 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -907,7 +958,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.170 
+l.172 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -918,7 +969,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.170 
+l.172 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -929,7 +980,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.170 
+l.172 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -940,14 +991,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.170 
+l.172 
       
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.170 
+l.172 
       
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -956,7 +1007,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.170 
+l.172 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -964,7 +1015,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \crcr.
 \endaligned ->\crcr 
                     \egroup \restorecolumn@ \egroup 
-l.171 	\end{aligned}
+l.173 	\end{aligned}
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -975,7 +1026,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \endaligned ->\crcr \egroup 
                             \restorecolumn@ \egroup 
-l.171 	\end{aligned}
+l.173 	\end{aligned}
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -986,7 +1037,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 \endaligned ...cr \egroup \restorecolumn@ \egroup 
                                                   
-l.171 	\end{aligned}
+l.173 	\end{aligned}
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -995,19 +1046,19 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Overfull \hbox (56.58546pt too wide) detected at line 172
+Overfull \hbox (56.58546pt too wide) detected at line 174
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.180 
+l.182 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1015,7 +1066,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.180 
+l.182 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1026,7 +1077,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.180 
+l.182 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1037,7 +1088,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.180 
+l.182 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1048,14 +1099,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.180 
+l.182 
       
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.180 
+l.182 
       
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1064,7 +1115,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.180 
+l.182 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1072,7 +1123,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \crcr.
 \endaligned ->\crcr 
                     \egroup \restorecolumn@ \egroup 
-l.181 	\end{aligned}
+l.183 	\end{aligned}
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1083,7 +1134,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \endaligned ->\crcr \egroup 
                             \restorecolumn@ \egroup 
-l.181 	\end{aligned}
+l.183 	\end{aligned}
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1094,7 +1145,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 \endaligned ...cr \egroup \restorecolumn@ \egroup 
                                                   
-l.181 	\end{aligned}
+l.183 	\end{aligned}
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1103,14 +1154,14 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.193 
+l.195 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1118,7 +1169,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.193 
+l.195 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1129,7 +1180,7 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \@@par 
-l.193 
+l.195 
       
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -1137,7 +1188,7 @@ So I shall assume that you typed `$$' both times.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.193 
+l.195 
       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1152,7 +1203,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.194 	\end{equation*}
+l.196 	\end{equation*}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1161,7 +1212,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.194 	\end{equation*}
+l.196 	\end{equation*}
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1172,20 +1223,20 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.194 	\end{equation*}
+l.196 	\end{equation*}
                       
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.210 
+l.212 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1193,7 +1244,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.210 
+l.212 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1204,7 +1255,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.210 
+l.212 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1215,14 +1266,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.210 
+l.212 
       
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.210 
+l.212 
       
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1231,7 +1282,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.210 
+l.212 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1239,7 +1290,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \crcr.
 \endaligned ->\crcr 
                     \egroup \restorecolumn@ \egroup 
-l.211 \end{aligned}
+l.213 \end{aligned}
                    
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1250,7 +1301,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \endaligned ...cr \egroup \restorecolumn@ \egroup 
                                                   
-l.211 \end{aligned}
+l.213 \end{aligned}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1259,211 +1310,235 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Overfull \hbox (36.55162pt too wide) detected at line 212
+Overfull \hbox (36.55162pt too wide) detected at line 214
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
 (./map_coloring.mod)
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--233
+Underfull \hbox (badness 10000) in paragraph at lines 232--235
 
  []
 
 [7]
-Overfull \hbox (47.97858pt too wide) in paragraph at lines 234--237
+Overfull \hbox (47.97858pt too wide) in paragraph at lines 236--239
 []\OT1/cmr/m/n/10 Vengono dichiarati poi i due vin-coli che carat-ter-iz-zano i
 l prob-lema: \OT1/cmtt/m/n/10 one[]color[]per[]node
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--237
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
 [8] (./map_coloring_2.mod)
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
 
  []
 
 (./map_coloring.run) (./map_coloring_2.run)
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--277
+Underfull \hbox (badness 10000) in paragraph at lines 276--279
 
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
-
- []
-
-(./map_coloring_dat/map_coloring_es1.dat)
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+<complete_graph.png, id=210, 1056.94875pt x 1099.10625pt>
+File: complete_graph.png Graphic file (type png)
+<use complete_graph.png>
+Package pdftex.def Info: complete_graph.png  used on input line 281.
+(pdftex.def)             Requested size: 211.386pt x 219.81735pt.
+[10] (./map_coloring_dat/map_coloring_es1.dat)
+Underfull \hbox (badness 10000) in paragraph at lines 291--293
 
  []
 
 
-Overfull \hbox (1.94678pt too wide) in paragraph at lines 313--316
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+[11 <./complete_graph.png>]
+Overfull \hbox (1.94678pt too wide) in paragraph at lines 317--320
 \OT1/cmr/m/n/10 Il con-tenuto delle vari-abili ci con-ferma quanto ipo-tiz-zato
 : la vari-abile \OT1/cmtt/m/n/10 node[]color
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--316
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-
- []
-
-(./map_coloring_dat/map_coloring_es2.dat)
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-
- []
-
+<complete_graph_coloured1.png, id=250, 1056.94875pt x 1099.10625pt>
+File: complete_graph_coloured1.png Graphic file (type png)
+<use complete_graph_coloured1.png>
+Package pdftex.def Info: complete_graph_coloured1.png  used on input line 324.
+(pdftex.def)             Requested size: 211.386pt x 219.81735pt.
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 361--365
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
+
+ []
+
+<non_complete_graph.png, id=255, 1105.12875pt x 1169.36874pt>
+File: non_complete_graph.png Graphic file (type png)
+<use non_complete_graph.png>
+Package pdftex.def Info: non_complete_graph.png  used on input line 332.
+(pdftex.def)             Requested size: 221.02184pt x 233.8696pt.
+[13 <./complete_graph_coloured1.png> <./non_complete_graph.png>]
+(./map_coloring_dat/map_coloring_es2.dat)
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 370--373
-
- []
-
-(./map_coloring_2_dat/map_coloring_2_es1.dat [13])
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--415
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+Underfull \hbox (badness 10000) in paragraph at lines 367--371
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+<non_complete_graph_coloured1.png, id=280, 1120.185pt x 1130.2225pt>
+File: non_complete_graph_coloured1.png Graphic file (type png)
+<use non_complete_graph_coloured1.png>
+Package pdftex.def Info: non_complete_graph_coloured1.png  used on input line 3
+73.
+(pdftex.def)             Requested size: 224.03302pt x 226.0405pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+File: complete_graph.png Graphic file (type png)
+<use complete_graph.png>
+Package pdftex.def Info: complete_graph.png  used on input line 381.
+(pdftex.def)             Requested size: 211.386pt x 219.81735pt.
+[15 <./non_complete_graph_coloured1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
 
  []
 
-(./map_coloring_2_dat/map_coloring_2_es2.dat)
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 470--472
+(./map_coloring_2_dat/map_coloring_2_es1.dat)
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
+<complete_graph_coloured2.png, id=300, 1061.9675pt x 1099.10625pt>
+File: complete_graph_coloured2.png Graphic file (type png)
+<use complete_graph_coloured2.png>
+Package pdftex.def Info: complete_graph_coloured2.png  used on input line 428.
+(pdftex.def)             Requested size: 212.38974pt x 219.81735pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
+[17 <./complete_graph_coloured2.png>]
+File: non_complete_graph.png Graphic file (type png)
+<use non_complete_graph.png>
+Package pdftex.def Info: non_complete_graph.png  used on input line 435.
+(pdftex.def)             Requested size: 221.02184pt x 233.8696pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
+
+ []
+
+(./map_coloring_2_dat/map_coloring_2_es2.dat)
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 487--489
+
+ []
+
+<non_complete_graph_coloured2.png, id=322, 1115.16624pt x 1179.40625pt>
+File: non_complete_graph_coloured2.png Graphic file (type png)
+<use non_complete_graph_coloured2.png>
+Package pdftex.def Info: non_complete_graph_coloured2.png  used on input line 4
+91.
+(pdftex.def)             Requested size: 223.0293pt x 235.87708pt.
+[19] [20 <./non_complete_graph_coloured2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+
+ []
+
+<tree.png, id=333, 1231.60126pt x 1259.70625pt>
+File: tree.png Graphic file (type png)
+<use tree.png>
+Package pdftex.def Info: tree.png  used on input line 500.
+(pdftex.def)             Requested size: 246.31589pt x 251.93678pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
 
  []
 
 (./map_coloring_2_dat/map_coloring_2_es3.dat)
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
-[17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 523.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 523.
+[21 <./tree.png>]
+<tree_coloured.png, id=346, 1251.67625pt x 1259.70625pt>
+File: tree_coloured.png Graphic file (type png)
+<use tree_coloured.png>
+Package pdftex.def Info: tree_coloured.png  used on input line 543.
+(pdftex.def)             Requested size: 250.33081pt x 251.93678pt.
+ [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 546.
+ [23 <./tree_coloured.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 546.
  (./relazione.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 523.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 523.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 546.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 546.
 Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: A4C49821DD918B042657E48D473C01D8;1067.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 523.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 546.
  ) 
 Here is how much of TeX's memory you used:
- 6254 strings out of 492982
- 91503 string characters out of 6134897
- 278500 words of memory out of 5000000
- 9607 multiletter control sequences out of 15000+600000
+ 7069 strings out of 492982
+ 103407 string characters out of 6134897
+ 289291 words of memory out of 5000000
+ 10377 multiletter control sequences out of 15000+600000
  10482 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,10n,32p,523b,1663s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,10n,32p,517b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1478,10 +1553,10 @@ cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on relazione.pdf (18 pages, 199320 bytes).
+Output written on relazione.pdf (23 pages, 638395 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
- 364 compressed objects within 4 object streams
- 166 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 442 PDF objects out of 1000 (max. 8388607)
+ 382 compressed objects within 4 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
