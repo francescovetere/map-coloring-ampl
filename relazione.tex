@@ -49,7 +49,7 @@ Il problema affrontato in questo progetto consiste nell'implementazione in lingu
 Risolvere il problema del \texttt{Map Coloring} significa assegnare ad ogni regione di una mappa geografica un colore, in modo tale che due regioni confinanti abbiano sempre colori diversi. Il numero di colori cercato \'e ovviamente quello minimo (utilizzando sempre un numero di colori pari al numero di regioni infatti, il problema diventerebbe banale).\\
 La mappa geografica pu\'o essere rappresentata tramite un grafo $G = (V, E)$ in cui:
 \begin{itemize}
-\item $V=\{v_{1},...,v_{n}\}$ rappresenta l'insieme delle \emph{n} regioni della mappa geografica.
+\item $V=\{v_{1},...,v_{n}\}$ rappresenta l'insieme delle \emph{n} regioni della mappa geografica;
 \item $E=\{(v_{i}, v_{j}) : v_{i}, v_{j} \in V, v_{i} \neq v_{j}\}$, dove $ (v_{i}, v_{j}) = 1 \iff \: v_{i}, v_{j} \; confinanti$ rappresenta l'insieme delle coppie di regioni \emph{i} e \emph{j} che sono confinanti sulla mappa geografica.
 \end{itemize}
 
@@ -60,10 +60,10 @@ Nel seguito di questo elaborato, si indicheranno con \texttt{map\_coloring} e \t
 
 \section{Modelli matematici}
 Come visto nella descrizione generale dei problemi, viene utilizzata una rappresentazione mediante grafo per la mappa geografica.\\
-I modelli farannno quindi uso di 3 insiemi:
+I modelli utilizzeranno dunque 3 insiemi:
 \begin{itemize}
 	\item[$\bullet$] $NODES$: L'insieme dei nodi (ogni nodo \'e una regione della mappa)\\
-	\item[$\bullet$] $EDGES$: L'insieme degli archi (ogni arco (\emph{i}, \emph{j}) indica che le regioni \emph{i} e \emph{j} sono adiacenti)\\
+	\item[$\bullet$] $EDGES$: L'insieme degli archi (un arco (\emph{i}, \emph{j}) indica che le regioni \emph{i} e \emph{j} sono confinanti)\\
 	\item[$\bullet$] $COLORS$: L'insieme dei colori (come si vedr\'a in seguito, di cardinalit\'a sufficientemente elevata)\\
 	\end{itemize}
 	
@@ -151,7 +151,7 @@ Per quanto riguarda \texttt{map\_coloring\_2}, le componenti del modello sono qu
 	\begin{itemize}
 	\item[$\bullet$] $node\_color_{n,c}$: ad ogni coppia nodo $n$ e colore $c$ associamo una variabile binaria $node\_color_{n,c}$ che ha valore 1 se al nodo $n$ \'e assegnato il colore $c$, 0 altrimenti.\\
 	\item[$\bullet$] $color\_used_{c}$: ad ogni colore $c$ associamo una variabile binaria $color\_used_{c}$ che ha valore 1 se il colore $c$ \'e stato utilizzato, 0 altrimenti.\\
-	\item[$\bullet$] $node\_deleted_{n}$: ad ogni nodo $n$ associamo una variabile binaria $node\_deleted_{n}$ che ha valore 1 se il colore $n$ \'e stato eliminato (non colorato), 0 altrimenti.\\
+	\item[$\bullet$] $node\_deleted_{n}$: ad ogni nodo $n$ associamo una variabile binaria $node\_deleted_{n}$ che ha valore 1 se il nodo $n$ \'e stato eliminato (non colorato), 0 altrimenti.\\
 	\end{itemize}
 	
 \item[] \textsc{vincoli}
@@ -163,7 +163,7 @@ Per quanto riguarda \texttt{map\_coloring\_2}, le componenti del modello sono qu
 	\end{aligned}
 	\end{equation*}
 	
-	Notiamo infatti che se il nodo non \'e stato eliminato, il vincolo coincide esattamente con l'analogo vincolo visto in \texttt{map\_coloring}. In caso contrario, il vincolo impone che per tale nodo non vi sia alcun colore assegnato.\\
+	Notiamo infatti che nel caso in cui il nodo non sia stato eliminato, il vincolo coincide esattamente con l'analogo vincolo considerato in \texttt{map\_coloring}. In caso contrario, il vincolo impone che per tale nodo non vi sia alcun colore assegnato.\\
 	
 	\item[$\bullet$] Il secondo vincolo impone che non vi siano due nodi adiacenti aventi lo stesso colore assegnato:\\
 	\begin{equation*}
@@ -227,10 +227,11 @@ Vengono di seguito mostrati i file \texttt{.mod} per il linguaggio \texttt{AMPL}
 \vspace{5mm}
 
 Il file modella in linguaggio \texttt{AMPL} quanto visto nell'analogo modello matematico.\\
-Per prima cosa vengono dichiarati gli insiemi che caratterizzano il problema: \texttt{NODES} e \texttt{EDGES} descrivono il grafo (\texttt{EDGES} \'e contenuto nel prodotto cartesiano \texttt{NODES} x \texttt{NODES}), mentre \texttt{COLORS} \'e l'insieme contenente i colori assegnabili.\\
+Per prima cosa vengono dichiarati gli insiemi che caratterizzano il problema: \texttt{NODES} e \texttt{EDGES} descrivono il grafo (\texttt{EDGES} \'e contenuto nel prodotto cartesiano \texttt{NODES} $\times$ \texttt{NODES}), mentre \texttt{COLORS} \'e l'insieme contenente i colori assegnabili.\\
 
-Seguono poi le dichiarazioni delle due variabili: \texttt{node\_color} e \texttt{color\_used}.\\
-La prima modella un array bidimensionale avente indici sull'inieme dei nodi e dei colori, in cui ogni valore, vincolato ad essere di tipo binario, indica se un particolare nodo \'e assegnato ad un particolare colore o meno.\\
+Seguono poi le dichiarazioni delle variabili \texttt{node\_color} e \texttt{color\_used}.\\
+La prima modella un array bidimensionale avente indici sull'insieme dei nodi e dei colori, in cui ogni valore, vincolato ad essere di tipo binario, indica se un particolare nodo \'e assegnato ad un particolare colore o meno.\\
+
 La seconda modella un array monodimensionale avente indici sull'insieme dei colori, con valori ancora binari che indicano se un particolare colore \'e stato scelto per l'assegnamento o meno.\\ 
 
 Vengono dichiarati poi i due vincoli che caratterizzano il problema: \texttt{one\_color\_per\_node} e \texttt{different\_color\_adjacent}.\\
@@ -249,14 +250,14 @@ Viene infine esplicitato l'obiettivo \texttt{num\_colors}, che semplicemente min
 Questa variante \'e molto simile al problema originale.\\
 Viene introdotta una nuova variabile, \texttt{node\_deleted}, che modella un array monodimensionale avente indici sull'insieme dei nodi, con valori binari che indicano se un nodo sia stato eliminato o meno.\\
 
-Cambia anche il vincolo \texttt{one\_color\_per\_node}: per ogni nodo, \'e richiesto che la somma dei colori asegnati sia ora pari a \texttt{1 - node\_deleted[n]}, per tenere conto del fatto che ora il solver ha la facolt\'a di scegliere che un nodo venga escluso dalla colorazione.\\
+Cambia anche il vincolo \texttt{one\_color\_per\_node}: per ogni nodo, \'e richiesto che la somma dei colori assegnati sia ora pari a \texttt{1 - node\_deleted[n]}, per tenere conto del fatto che ora il solver ha la facolt\'a di scegliere che un nodo venga escluso dalla colorazione.\\
 
 Anche l'obiettivo \'e differente: \texttt{min\_deleted} richiede infatti che sia minimizzata la somma dei nodi eliminati.\\
 \pagebreak
 
 \section{Esempi di esecuzione}
 Vengono ora analizzati alcuni esempi di file \texttt{.dat} per entrambi i problemi.\\
-Per testare l'esecuzione del modello corredato con i suoi dati, si utilizza per entrambi un file \texttt{.run}, molto simile per entrambi i problemi:\\
+Per testare l'esecuzione dei modelli corredati dai loro dati, si utilizza un file \texttt{.run} di questo tipo:\\
 
 \texttt{map\_coloring.run}
 \lstinputlisting{map_coloring.run}
@@ -268,13 +269,13 @@ Per testare l'esecuzione del modello corredato con i suoi dati, si utilizza per 
 
 \vspace{5mm}
 
-Come si nota, si \'e scelto di mostrare in output il contenuto delle variabili al termine della risoluzione da parte del solver, in modo da poter trarre alcune conclusioni sui risultati ottenuti.\\
+Come si pu\'o notare, \'e stato scelto di mostrare in output il contenuto delle variabili al termine della risoluzione da parte del solver, in modo da poter trarre alcune conclusioni sui risultati ottenuti.\\
 
 \subsection{map\_coloring}
 \subsubsection{map\_coloring\_es1.dat}
 
 Per quanto riguarda \texttt{map\_coloring}, analizziamo intanto il caso di un grafo completo con $|V| = 5$, ossia un grafo in cui ogni vertice \'e collegato tramite un arco agli altri 4 vertici restanti. \\
-Sebbene questa situazione non rappresenti una mappa, in quanto vale un teorema per cui non \'e possibile dividere un piano in 5 regioni in modo che ciascuna tocchi le altre 4 (il confine tra le regioni \'e da intendersi come un tratto di territorio, e non uno o pi\'u punti separati: in tal caso infatti, sarebbe sufficiente considerare una circonferenza e dividerla in spicchi, ed allora tutti gli spicchi sarebbero confinanti tra di loro), \'e comunque un caso interessante da analizzare.\\
+Sebbene questa situazione non rappresenti una mappa, in quanto vale un teorema per cui non \'e possibile dividere un piano in 5 regioni in modo che ciascuna tocchi le altre 4 (il confine tra le regioni \'e da intendersi come un tratto di territorio, e non semplicemente come uno o pi\'u punti separati: in tal caso infatti, sarebbe sufficiente considerare una circonferenza e dividerla in spicchi, ed allora tutti gli spicchi sarebbero confinanti tra di loro), \'e comunque un caso interessante da analizzare.\\
 
 Sia dato quindi il seguente grafo:\\
 
@@ -290,7 +291,7 @@ Il file \texttt{.dat} che implementa questa situazione \'e il seguente:
 \vspace{5mm}
 
 Si noti che \'e fondamentale definire un numero di colori sufficientemente elevato per poter ottenere una soluzione ammissibile del problema: un upper bound sicuramente valido \'e dato dal numero di nodi presenti nel grafo. La teoria ci dice in realt\'a che ogni mappa ammette una colorazione valida formata da 4 soli colori, ma non essendo questa una mappa tale risultato non vale.\\
-Ad ogni modo anche nei successivi esempi ignoreremo questo teorema, dando al solver pi\'u colori disponibili di quelli effettivamente necessari per poter osservare come certi colori vengano esclusi.\\
+Ad ogni modo anche nei successivi esempi ignoreremo questo teorema, dando al solver pi\'u colori disponibili di quelli effettivamente necessari, al fine di poter osservare come certi colori vengano esclusi.\\
 
 \pagebreak
 
@@ -319,7 +320,7 @@ yellow  1
 
 Notiamo che il solver trova una soluzione ottima eseguendo 6 iterazioni dell'algoritmo del simplesso.\\
 Il valore ottimo, ossia 5, era in questo caso facilmente prevedibile: trattandosi di un grafo completo, ogni nodo \'e adiacente ai restanti $|V| - 1$ nodi: questo implica il fatto che ad ogni nodo dovr\'a necessariamente essere assegnato un colore differente.\\
-Il contenuto delle variabili ci conferma quanto ipotizzato: la variabile \texttt{node\_color} mostra che ad ogni nodo \'e assegnato esattamente un colore (questo deve essere vero per qualsiasi tipo di grafo, a causa del vincolo \texttt{one\_color\_per\_node}) mentre la variabile \texttt{color\_used} mostra che tutti i colori sono stati utilizzati.\\
+Il contenuto delle variabili ci conferma quanto ipotizzato: la variabile \texttt{node\_color} mostra che ad ogni nodo \'e assegnato esattamente un colore (questo deve essere vero per qualsiasi tipo di grafo, a causa del vincolo \texttt{one\_color\_per\_node}) mentre la variabile \texttt{color\_used} mostra che effettivamente tutti i colori sono stati utilizzati.\\
 
 \pagebreak
 
@@ -329,6 +330,7 @@ La soluzione ottima trovata dal solver \'e la seguente:\\
 \includegraphics[scale=0.15]{complete_graph_coloured1.png}
 \end{center}
 
+\vspace{10mm}
 
 \subsubsection{map\_coloring\_es2.dat}
 Analizziamo ora il caso di un grafo non completo, come illustrato dalla seguente immagine:\\
@@ -378,6 +380,8 @@ La soluzione ottima trovata dal solver \'e rappresentata dalla seguente immagine
 \begin{center}
 \includegraphics[scale=0.15]{non_complete_graph_coloured1.png}
 \end{center}
+
+\vspace{10mm}
 
 \subsection{map\_coloring\_2}
 \subsubsection{map\_coloring\_2\_es1.dat}
@@ -433,7 +437,7 @@ F  0
 
 \pagebreak 
 
-Notiamo che la soluzione ottima \'e tuttavia diversa da quella precedente: questo \'e dovuto al fatto che ovviamente ci sono pi\'u combinazioni di assegnamenti nodo-colore che permettono di ottenere lo stesso valore obiettivo. La combinazione trovata dal solver \'e in questo caso la seguente:\\
+Notiamo che la soluzione ottima \'e tuttavia diversa da quella precedente: questo \'e dovuto al fatto che ovviamente ci sono pi\'u combinazioni di assegnamenti nodo-colore che permettono di ottenere lo stesso valore obiettivo. La combinazione trovata dal solver \'e in questo caso infatti la seguente:\\
 
 \begin{center}
 \includegraphics[scale=0.15]{complete_graph_coloured2.png}
@@ -442,13 +446,13 @@ Notiamo che la soluzione ottima \'e tuttavia diversa da quella precedente: quest
 \pagebreak
 
 \subsubsection{map\_coloring\_2\_es2.dat}
-Analizziamo ora il caso dello stesso grafo non completo visto in \texttt{map\_coloring}:\\
+Analizziamo ora il caso dello stesso grafo non completo considerato in \texttt{map\_coloring}:\\
 
 \begin{center}
 \includegraphics[scale=0.15]{non_complete_graph.png}
 \end{center}
 
-Dalla soluzione ottenuta precedentemente, sappiamo che il grafo richiede un minimo di 3 colori per poter essere colorato in maniera ammissibile. Proviamo dunque a fissare un numero di colori $k = 2$: il solver, se possibile, dovr\'a scegliere di eliminare alcuni nodi al fine ottenere una colorazione valida.\\
+Dalla soluzione ottima ottenuta precedentemente, sappiamo che il grafo richiede un minimo di 3 colori per poter essere colorato in maniera ammissibile. Proviamo dunque a fissare un numero di colori $k = 2$: il solver, se possibile, dovr\'a scegliere di eliminare alcuni nodi al fine ottenere una colorazione valida.\\
 
 Il file \texttt{.dat} che implementa questa situazione \'e il seguente:
 
@@ -499,7 +503,7 @@ G  0
 
 \end{verbatim}
 
-Notiamo che il solver riesce ad eliminare un certo numero di nodi per ottenere una colorazione valida con 2 colori: una soluzione ottima \'e infatti trovata eseguendo 13 iterazioni dell'algoritmo del simplesso e 1 iterazione dell'algoritmo branch and bound.\\
+Notiamo che il solver riesce ad eliminare un certo numero di nodi al fine di ottenere una colorazione valida con soli 2 colori: una soluzione ottima \'e infatti trovata eseguendo 13 iterazioni dell'algoritmo del simplesso, utilizzato questa volta in combinazione con l'algoritmo branch and cut.\\
 
 \pagebreak
 
@@ -517,6 +521,8 @@ Analizziamo ora il caso di un albero binario:\\
 \begin{center}
 \includegraphics[scale=0.15]{tree.png}
 \end{center}
+
+\vspace{10mm}
 
 In generale, un albero binario necessita di almeno 2 colori per poter essere colorabile. Analizziamo allora il comportamento del solver nel caso venga reso disponibile 1 solo colore, implementando il seguente file \texttt{.dat}:\\
 
