@@ -10,8 +10,8 @@ Once downloaded, just put your "/ampl" folder in the root folder of this project
 
 ## Usage
 Open a terminal in the root folder of this project, and type the following commands:
-> ../ampl/ampl
-> include map_coloring.run
+``../ampl/ampl``
+``include map_coloring.run``
 
 ## Contributor(s)
 
