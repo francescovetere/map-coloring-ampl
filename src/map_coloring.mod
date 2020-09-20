@@ -10,7 +10,7 @@ set COLORS;
 # node_color[n, c] = 1 se il nodo n e' assegnato al colore c, 0 altrimenti
 var node_color {NODES, COLORS} binary; 
 
-# color_used[c] = 1 se il colore c e' utilizzato, 0 altrimenti
+# color_used[c] = 1 se il colore c e' utilizzato, 0 altrimenti 
 var color_used {COLORS} binary;
 
 # vincolo che impone l'assegnamento di un solo colore per ogni nodo
