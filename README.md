@@ -1,9 +1,9 @@
 # map-coloring-ampl
 
-This is an implementation of the well-known "Map Coloring" problem (with an interesting variant) I made in [AMPL](https://ampl.com/) language for the course "Ricerca Operativa" of my Master's Degree in "Computer Engineering - Internet Oriented Systems" at UniPR.
+An implementation in [AMPL] language (https://ampl.com/) of the "Map Coloring" problem (with an interesting variant).
 
-Please see the [paper](https://github.com/francescovetere/map-coloring-ampl/blob/master/relazione.pdf) I wrote about the project, in order to have a better understanding of the problem and of its solution.
+In order to have a better understanding of the problem and its solution, you can check this [document](https://github.com/francescovetere/map-coloring-ampl/blob/master/relazione.pdf).
  
 ## Authors
 
-* **Vetere Francesco**
+* **Vetere Francesco <francescovetere1997@gmail.com>**
